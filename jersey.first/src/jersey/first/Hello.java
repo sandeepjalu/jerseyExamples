@@ -4,7 +4,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-//I am adding this line to check
 // Plain old Java Object it does not extend as class or implements 
 // an interface
 
@@ -17,8 +16,8 @@ import javax.ws.rs.core.MediaType;
 //Sets the path to base URL + /hello
 @Path("/hello")
 public class Hello {
-
   // This method is called if TEXT_PLAIN is request
+  // Get Method below
   @GET
   @Produces(MediaType.TEXT_PLAIN)
   public String sayPlainTextHello() {
